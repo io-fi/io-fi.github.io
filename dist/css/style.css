@@ -1138,12 +1138,12 @@ button, input, select, textarea, label {
     height: auto
 }
 
-.hero-figure::before, .hero-figure::after {
+/* .hero-figure::before, .hero-figure::after {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
     background-size: 100%
-}
+} */
 
 .has-animations .hero-figure::before, .has-animations .hero-figure::after {
     opacity: 0;
@@ -1403,7 +1403,7 @@ button, input, select, textarea, label {
     background-image: url("../images/pricing-illustration.svg")
 } */
 
-.pricing-table-header, .pricing-table-features-title, .pricing-table-features li {
+.pricing-table-header, .pricing-table-features li {
     border-bottom: 1px solid rgba(138, 148, 167, 0.24)
 }
 
@@ -1421,7 +1421,7 @@ button, input, select, textarea, label {
     width: 100%
 }
 
-.pricing-table-inner::before {
+/* .pricing-table-inner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1430,6 +1430,16 @@ button, input, select, textarea, label {
     left: 0;
     box-shadow: 0 24px 48px rgba(21, 24, 29, 0.24);
     mix-blend-mode: multiply
+} */
+
+.pricing-table-price {
+    display: flex;
+    justify-content: center;
+    height: 340px;
+}
+
+.pricing-table-price>img {
+    object-fit: contain;
 }
 
 .pricing-table-price-currency {
@@ -1438,7 +1448,7 @@ button, input, select, textarea, label {
 
 .pricing-table-features-title {
     color: #fff;
-    font-weight: 700
+    font-weight: 500
 }
 
 .pricing-table-features li {
